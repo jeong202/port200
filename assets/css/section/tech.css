@@ -1,6 +1,7 @@
 /* flow-container */
 .flow-container2 {
   margin-top: -100px;
+  font-family: "Partizeno";
 }
 
 .flow-text1 {
@@ -12,6 +13,7 @@
   font-weight: bold;
   color: var(--sub-color);
   margin-bottom: -100px;
+  font-family: "Partizeno";
 }
 
 .flow-text2 {
@@ -22,6 +24,7 @@
   font-size: 8rem;
   font-weight: bold;
   color: var(--sub-color);
+  font-family: "Partizeno";
 }
 
 .flow-wrap1 {
@@ -64,27 +67,19 @@
   margin: 0 auto;
 }
 
-/* .stack__imgs {
-  margin-right: 50px;
-}
-
-.stack__imgs>img {
-  display: block;
-  width: 70px;
-  height: 70px;
-} */
-
 .stack__name {
   margin-right: 50px;
   font-size: 48px;
+  font-family: "Partizeno";
 }
 
 .stack__desc {
   font-family: var(--mainKor-font);
   padding: 25px;
+  font-family: "IropkeBatang";
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .stack__name {
     margin-right: 30px;
     font-size: 30px;
@@ -100,7 +95,7 @@
   }
 }
 
-@media(max-width: 810px) {
+@media (max-width: 810px) {
   .stack__name {
     margin-right: 20px;
     font-size: 24px;
@@ -117,11 +112,8 @@
   }
 }
 
-@media(max-width: 480px) {
-
-
+@media (max-width: 480px) {
   .stack__desc {
     display: none;
   }
-
 }

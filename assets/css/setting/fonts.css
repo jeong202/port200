@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-@import url('https://webfontworld.github.io/NexonLv1GothicLow/NexonLv1GothicLow.css');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://webfontworld.github.io/NexonLv1GothicLow/NexonLv1GothicLow.css");
 
 /* -----------------/Partizeno/------------------ */
 @font-face {
@@ -12,32 +12,22 @@
   font-display: swap;
 }
 
-/* -----------------/PartizenoRegular/------------------ */
-@font-face {
-  font-family: "PartizenoRegular";
-  src: url("../fonts/PartizenoRegular.woff2") format("woff2"),
-    url("../fonts/PartizenoRegular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* -----------------/IropkeBatang'/------------------ */
 @font-face {
-  font-family: 'IropkeBatang';
+  font-family: "IropkeBatang";
   font-weight: normal;
   font-style: normal;
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.ttf') format("truetype");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.ttf")
+      format("truetype");
   font-display: swap;
 }
-
-
-
-
 
 /* -----------------/Abel/------------------ */
 /* @font-face {
@@ -76,8 +66,6 @@
   font-style: normal;
   font-display: swap;
 } */
-
-
 
 /* -----------------/PP Hatton/------------------ */
 /* @font-face {
