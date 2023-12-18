@@ -1,0 +1,117 @@
+#comment {
+    height: 100vh;
+    padding: 16px;
+}
+
+.comment__title {
+    width: 100%;
+    height: 5vw;
+    font-size: 4vw;
+    line-height: 1;
+    border-bottom: 0.4vw solid var(--sub-color);
+    margin-bottom: 16px;
+}
+
+.comment__inner {
+    padding: 16px;
+    display: flex;
+    gap: 10%;
+}
+
+.comment__input {
+    width: 50%;
+}
+
+.comment__view {
+    width: 50%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    display: flex;
+    gap: 2.5%;
+}
+
+#commentName {
+    padding: 15px 8px;
+}
+
+#commentPass {
+    padding: 15px 8px;
+}
+
+textarea {
+    padding: 20px 15px;
+    height: 30%;
+    resize: none;
+}
+
+#commentName,
+#commentPass,
+textarea {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px;
+    background-color: var(--sub-color);
+    color: var(--main-color);
+    border: none;
+    transform: all 3s;
+}
+
+button:hover {
+    background-color: #ebd9ba;
+    ;
+}
+
+.text {
+    margin-bottom: 16px;
+}
+
+.text>span {
+    position: relative;
+}
+
+.text>span::before {
+    content: '🎵';
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.author {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.data {
+    margin-left: 10px;
+    color: gray;
+}
+
+.mode {
+    padding: 5px;
+    margin: 10px 0;
+    border-top: 1px dashed var(--sub-color);
+    margin-bottom: 15px;
+}
+
+.modify,
+.delete {
+    color: var(--sub-color);
+}
+
+.modify:hover,
+.delete:hover {
+    text-decoration: underline;
+}

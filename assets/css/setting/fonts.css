@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://webfontworld.github.io/NexonLv1GothicLow/NexonLv1GothicLow.css');
+
+/* -----------------/Partizeno/------------------ */
+@font-face {
+  font-family: "Partizeno";
+  src: url("../../fonts/Partizeno.woff2") format("woff2"),
+    url("../../fonts/Partizeno.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -----------------/PartizenoRegular/------------------ */
+@font-face {
+  font-family: "PartizenoRegular";
+  src: url("../fonts/PartizenoRegular.woff2") format("woff2"),
+    url("../fonts/PartizenoRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -----------------/IropkeBatang'/------------------ */
+@font-face {
+  font-family: 'IropkeBatang';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.ttf') format("truetype");
+  font-display: swap;
+}
+
+
+
+
+
+/* -----------------/Abel/------------------ */
+/* @font-face {
+  font-family: "Abel";
+  src: url("../../fonts/Abel-Regular.woff") format("woff2"),
+    url("../../fonts/Abel-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* -----------------/Gmarket Sans TTF/------------------ */
+/* @font-face {
+  font-family: "Gmarket Sans TTF";
+  src: url("../../fonts/GmarketSansTTFBold.woff2") format("woff2"),
+    url("../../fonts/GmarketSansTTFBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gmarket Sans TTF";
+  src: url("../../fonts/GmarketSansTTFMedium.woff2") format("woff2"),
+    url("../../fonts/GmarketSansTTFMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gmarket Sans TTF";
+  src: url("../../fonts/GmarketSansTTFLight.woff2") format("woff2"),
+    url("../../fonts/GmarketSansTTFLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+} */
+
+
+
+/* -----------------/PP Hatton/------------------ */
+/* @font-face {
+  font-family: "PP Hatton";
+  src: url("../../fonts/PPHatton-Bold.woff2") format("woff2"),
+    url("../../fonts/PPHatton-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Hatton";
+  src: url("../../fonts/PPHatton-BoldItalic.woff2") format("woff2"),
+    url("../../fonts/PPHatton-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Hatton";
+  src: url("../../fonts/PPHatton-Medium.woff2") format("woff2"),
+    url("../../fonts/PPHatton-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Hatton";
+  src: url("../../fonts/PPHatton-Ultralight.woff2") format("woff2"),
+    url("../../fonts/PPHatton-Ultralight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Hatton";
+  src: url("../../fonts/PPHatton-MediumItalic.woff2") format("woff2"),
+    url("../../fonts/PPHatton-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Hatton";
+  src: url("../../fonts/PPHatton-UltralightItalic.woff2") format("woff2"),
+    url("../../fonts/PPHatton-UltralightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+} */
+
+/* -----------------/Roboto/------------------ */
+/* @font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Black.woff2") format("woff2"),
+    url("../../fonts/Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-BlackItalic.woff2") format("woff2"),
+    url("../../fonts/Roboto-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-BoldItalic.woff2") format("woff2"),
+    url("../../fonts/Roboto-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Light.woff2") format("woff2"),
+    url("../../fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Italic.woff2") format("woff2"),
+    url("../../fonts/Roboto-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-LightItalic.woff2") format("woff2"),
+    url("../../fonts/Roboto-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-MediumItalic.woff2") format("woff2"),
+    url("../../fonts/Roboto-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Thin.woff2") format("woff2"),
+    url("../../fonts/Roboto-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-ThinItalic.woff2") format("woff2"),
+    url("../../fonts/Roboto-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */

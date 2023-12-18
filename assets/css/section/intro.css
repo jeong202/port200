@@ -1,0 +1,57 @@
+/* --------------------------------/ intro /---------------------------------- */
+#intro {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#animation-container {
+  height: 100vh;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.intro__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: var(--sub-color);
+  text-align: center;
+  font-family: "Partizeno";
+}
+
+.intro__title .title1 {
+  font-family: "Partizeno";
+  font-size: 13vw;
+  line-height: 0.7;
+  white-space: nowrap;
+}
+
+.intro__title .title2 {
+  font-family: "Partizeno";
+  font-size: 15vw;
+  line-height: 0.9;
+  white-space: nowrap;
+}
+
+.intro__title .title3 {
+  font-size: 5vw;
+  font-family: "Orbitron";
+  font-style: italic;
+  line-height: 1;
+  margin-top: 15px;
+}
+
+.intro__title .title4 {
+  letter-spacing: 5px;
+  margin-top: 20px;
+  font-family: 'NexonLv1GothicLow';
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: 1vw;
+}
