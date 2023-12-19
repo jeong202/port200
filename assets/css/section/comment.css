@@ -22,11 +22,10 @@
 
 .comment__input {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.comment__view {
-  width: 50%;
-}
 
 fieldset {
   display: flex;
@@ -40,16 +39,19 @@ fieldset {
 
 #commentName {
   padding: 15px 8px;
+  border-radius: 10px;
 }
 
 #commentPass {
   padding: 15px 8px;
+  border-radius: 10px;
 }
 
 textarea {
   padding: 20px 15px;
   height: 30%;
   resize: none;
+  border-radius: 10px;
 }
 
 #commentName,
@@ -66,6 +68,7 @@ button {
   color: var(--main-color);
   border: none;
   transform: all 3s;
+  border-radius: 10px;
 }
 
 button:hover {
@@ -76,11 +79,11 @@ button:hover {
   margin-bottom: 16px;
 }
 
-.text > span {
+.text>span {
   position: relative;
 }
 
-.text > span::before {
+.text>span::before {
   content: "🎵";
   position: absolute;
   right: 10px;
@@ -115,4 +118,96 @@ button:hover {
 .modify:hover,
 .delete:hover {
   text-decoration: underline;
+}
+
+/* ---------------------------------/ comment__pages /-------------------------- */
+.comment__pages {
+  margin-top: 30px;
+}
+
+.comment__pages>ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.comment__pages>ul>li {
+  margin-right: 5px;
+}
+
+.comment__pages>ul>li>a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: var(--sub-color);
+  border-radius: 3px;
+}
+
+.comment__pages>ul>li.active>a,
+.comment__pages>ul>li:hover>a {
+  background-color: var(--sub-color);
+  color: var(--main-color);
+}
+
+.comment__pages>ul>li.next>a,
+.comment__pages>ul>li.prev>a {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1262px) {
+  .comment__pages {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .comment__pages {
+    font-size: 0.7em;
+  }
+}
+
+
+
+@media screen and (max-width: 1130px) {
+  .comment__pages>ul>li:not(.first):not(.prev):not(.next):not(.last) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .comment__pages {
+    display: none;
+  }
+
+  .comment__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comment__view {
+    margin-top: 20px;
+  }
+}
+
+/* 이미지 */
+.hover08>figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover08 figure img {
+  margin-top: 20px;
+  border-radius: 20px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  width: 80%;
+  height: 80%;
+}
+
+.hover08 figure:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
