@@ -14,11 +14,13 @@
 }
 
 .comment__inner {
-  padding: 16px;
+  padding: 16px 80px;
   display: flex;
+  flex-direction: column;
   gap: 10%;
   font-family: "IropkeBatang";
 }
+
 
 .comment__input {
   width: 50%;
@@ -59,20 +61,23 @@ textarea {
 textarea {
   width: 100%;
   margin-bottom: 8px;
+  border: 1px solid var(--sub-color);
+  background-color: var(--main-color)
 }
 
 button {
   cursor: pointer;
   padding: 8px;
-  background-color: var(--sub-color);
-  color: var(--main-color);
-  border: none;
+  background-color: var(--main-color);
+  color: var(--sub-color);
+  border: 1px solid var(--sub-color);
   transform: all 3s;
   border-radius: 10px;
 }
 
 button:hover {
-  background-color: #ebd9ba;
+  background-color: var(--sub-color);
+  color: var(--main-color)
 }
 
 .text {
@@ -84,7 +89,7 @@ button:hover {
 }
 
 .text>span::before {
-  content: "🎵";
+  content: "🔊";
   position: absolute;
   right: 10px;
   top: 8px;
@@ -104,6 +109,7 @@ button:hover {
 }
 
 .mode {
+  font-size: 0.8rem;
   padding: 5px;
   margin: 10px 0;
   border-top: 1px dashed var(--sub-color);
@@ -121,8 +127,16 @@ button:hover {
 }
 
 /* ---------------------------------/ comment__pages /-------------------------- */
+.commentWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .comment__pages {
   margin-top: 30px;
+  margin-bottom: 40px;
+
 }
 
 .comment__pages>ul {
@@ -154,60 +168,46 @@ button:hover {
   font-weight: bold;
 }
 
-@media screen and (max-width: 1262px) {
-  .comment__pages {
-    font-size: 0.8em;
-  }
-}
+/* @media(max-width:660px) {
 
-@media screen and (max-width: 1150px) {
-  .comment__pages {
-    font-size: 0.7em;
-  }
-}
-
-
-
-@media screen and (max-width: 1130px) {
-  .comment__pages>ul>li:not(.first):not(.prev):not(.next):not(.last) {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .comment__pages {
+  .first,
+  .last {
     display: none;
   }
 
-  .comment__inner {
-    flex-direction: column;
-    align-items: center;
+  .comment__input {
+    width: 80%;
   }
 
-  .comment__view {
-    margin-top: 20px;
+}
+
+@media(max-width:490px) {
+
+  ul>li:nth-child(6) {
+    display: none;
   }
+
+  ul>li:nth-child(7) {
+    display: none;
+  }
+
 }
 
-/* 이미지 */
-.hover08>figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@media(max-width:420px) {
+  ul>li:nth-child(3) {
+    display: none;
+  }
 
-.hover08 figure img {
-  margin-top: 20px;
-  border-radius: 20px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  width: 80%;
-  height: 80%;
-}
+  ul>li:nth-child(4) {
+    display: none;
+  }
 
-.hover08 figure:hover img {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
+  ul>li:nth-child(5) {
+    display: none;
+  }
+
+  .comment__input {
+    width: 100%;
+  }
+
+} */

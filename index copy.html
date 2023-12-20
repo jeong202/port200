@@ -400,15 +400,15 @@
                     <div class="commentWrap">
                         <div class="comment__pages">
                             <ul>
-                                <!-- <li class="first"><a href="#">처음으로</a></li>
-                                <li class="prev"><a href="#">이전</a></li> -->
+                                <li class="first"><a href="#">처음으로</a></li>
+                                <li class="prev"><a href="#">이전</a></li>
                                 <li class="active"><a href="#">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
                                 <li><a href="#">4</a></li>
                                 <li><a href="#">5</a></li>
-                                <!-- <li class="next"><a href="#">다음</a></li>
-                                <li class="last"><a href="#">마지막으로</a></li> -->
+                                <li class="next"><a href="#">다음</a></li>
+                                <li class="last"><a href="#">마지막으로</a></li>
                             </ul>
                         </div>
                         <div class="comment__input">
@@ -784,21 +784,6 @@
             onEnter: () => {
                 gsap.to([stackName, stackDesc], { opacity: 1, y: 0, duration: 0.5, stagger: 0.2 });
             },
-        });
-    });
-    // port : 글씨 흐리게
-    gsap.utils.toArray('.parallax__item').forEach(item => {
-        const imgWrap = item.querySelector('.parallax__item__imgWrap');
-        const descText = item.querySelector('.parallax__item__desc');
-
-        gsap.set(descText, { opacity: 1, filter: "blur(0px)" });
-
-        imgWrap.addEventListener('mouseenter', () => {
-            gsap.to(descText, { opacity: 1, filter: "blur(8px)", duration: 0.5 });
-        });
-
-        imgWrap.addEventListener('mouseleave', () => {
-            gsap.to(descText, { opacity: 1, filter: "blur(0px)", duration: 0.5 });
         });
     });
     // info : 가로스크롤
