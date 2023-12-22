@@ -26,13 +26,13 @@
     </div>
     <!-- //skip -->
 
-    <header id="header" role="banner" class="mouse__wrap">
+    <header id="header" class="mouse__wrap" role="banner">
         <div class="header__inner">
             <div class="header__logo">
-                <a href="#">portfolio</a>
+                <a href=" #" class="pointer">portfolio</a>
             </div>
-            <div class="header__nav" id="trigger-overlay" role="navigation" aria-label="메인 메뉴">
-                <span>menu</span>
+            <div class="header__nav pointer" id="trigger-overlay" role="navigation" aria-label="메인 메뉴">
+                <span class="pointer">menu</span>
             </div>
         </div>
         <div class="overlay overlay-slidedown">
@@ -99,8 +99,9 @@
         </div>
         <!-- flow(port) -->
 
-        <section id="port" class="parallax__cont mouse__wrap">
-            <div class="mouse__cursor"></div>
+        <section id="port" class="parallax__cont"">
+            <div class=" mouse__cursor">
+            </div>
             <section id="section1" class="parallax__item" data-gradient="linear-gradient(to right, #1c1e21, #36485e)">
                 <figure class="parallax__item__imgWrap reveal reveal_RTL">
                     <div class="parallax__item__img"></div>
@@ -112,8 +113,8 @@
                         리액트와 유튜브 API를 이용하여 기타리스트의 기타연주와 관련된 사이트를 만들었습니다.
                     </div>
                     <div class="links reveal reveal_RTL" data-delay="0.6">
-                        <div class="git__link"><a href="#" class="btn">GitHub</a></div>
-                        <div class="view__link"><a href="#" class="btn">View</a></div>
+                        <div class="git__link"><a href="#" class="btn pointer">GitHub</a></div>
+                        <div class="view__link"><a href="#" class="btn pointer">View</a></div>
                     </div>
                 </div>
 
@@ -133,9 +134,10 @@
                         이벤트 리스너와 조건문을 활용하여 사용자 상호작용과 결과 표시 기능을 갖추고 있습니다.
                     </p>
                     <div class="links reveal reveal_LTR" data-delay="0.6">
-                        <div class="git__link"><a href="#" class="btn">GitHub</a></div>
-                        <div class="view__link"><a href="#" class="btn">View</a></div>
+                        <div class=" git__link"><a href="#" class="btn pointer">GitHub</a></div>
+                        <div class="view__link"><a href="#" class="btn pointer">View</a></div>
                     </div>
+                </div>
                 </div>
 
             </section>
@@ -154,8 +156,8 @@
                         카카오지도 API를 연동하였고 뮤지컬과 배우 찜기능을 구현했습니다.
                     </p>
                     <div class="links reveal reveal_RTL" data-delay="0.6">
-                        <div class=" git__link"><a href="#" class="btn">GitHub</a></div>
-                        <div class="view__link"><a href="#" class="btn">View</a></div>
+                        <div class=" git__link"><a href="#" class="btn pointer">GitHub</a></div>
+                        <div class="view__link"><a href="#" class="btn pointer">View</a></div>
                     </div>
                 </div>
 
@@ -175,8 +177,8 @@
                         댓글을 비동기적으로 추가, 수정, 삭제하기 위해 Ajax를 사용했습니다.
                     </p>
                     <div class="links reveal reveal_LTR" data-delay="0.6">
-                        <div class=" git__link"><a href="#" class="btn">GitHub</a></div>
-                        <div class="view__link"><a href="#" class="btn">View</a></div>
+                        <div class=" git__link"><a href="#" class="btn pointer">GitHub</a></div>
+                        <div class="view__link"><a href="#" class="btn pointer">View</a></div>
                     </div>
                 </div>
             </section>
@@ -403,11 +405,11 @@
                             <ul>
                                 <!-- <li class="first"><a href="#">처음으로</a></li>
                                 <li class="prev"><a href="#">이전</a></li> -->
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
+                                <li class="active"><a href="#" class="pointer">1</a></li>
+                                <li><a href=" #" class="mouse__wrap pointer">2</a></li>
+                                <li><a href="#" class="mouse__wrap pointer">3</a></li>
+                                <li><a href="#" class="mouse__wrap pointer">4</a></li>
+                                <li><a href="#" class="mouse__wrap pointer">5</a></li>
                                 <!-- <li class="next"><a href="#">다음</a></li>
                                 <li class="last"><a href="#">마지막으로</a></li> -->
                             </ul>
@@ -420,7 +422,7 @@
                                     <input type="password" id="commentPass" placeholder="비밀번호" autocomplete="off">
                                 </div>
                                 <textarea placeholder="댓글을 입력하세요"></textarea>
-                                <button type="button">댓글 작성</button>
+                                <button type="button" class="mouse__wrap pointer">댓글 작성</button>
                             </fieldset>
                         </div>
                     </div>
@@ -444,10 +446,10 @@
     <footer id="footer" role="contentinfo" class="mouse__wrap">
         <div class="footer__inner">
             <div>
-                <span><a href="https://github.com/jeong202" target="_blank">GitHub</a></span>
+                <span><a class="pointer" href="https://github.com/jeong202" target="_blank">GitHub</a></span>
             </div>
             <div>
-                <span><a href="#comment">COMMENT</a></span>
+                <span><a class="pointer" href="#comment">COMMENT</a></span>
             </div>
         </div>
     </footer>
@@ -773,7 +775,7 @@
             }
         });
     });
-
+    //tech
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.utils.toArray('.tech__stack.t6').forEach(stack => {
@@ -790,6 +792,38 @@
             },
         });
     });
+
+
+
+
+
+
+    gsap.utils.toArray('.tech__stack.t6').forEach(stack => {
+        const stackName = stack.querySelector('.stack__name');
+        const stackDesc = stack.querySelector('.stack__desc');
+
+        gsap.set([stackName, stackDesc], { opacity: 0, y: '+=20' });
+
+        ScrollTrigger.create({
+            trigger: stack,
+            start: 'top 60%',
+            onEnter: () => {
+                gsap.to([stackName, stackDesc], { opacity: 1, y: 0, duration: 0.5, stagger: 0.2 });
+            },
+            onEnterBack: () => {
+                gsap.to([stackName, stackDesc], { opacity: 0, y: '+=20', duration: 0.5, stagger: 0.2 });
+            },
+        });
+    });
+
+
+
+
+
+
+
+
+
     // port : 글씨 흐리게
     gsap.utils.toArray('.parallax__item').forEach(item => {
         const imgWrap = item.querySelector('.parallax__item__imgWrap');
@@ -1157,21 +1191,52 @@
 
     init();
 
-    // 마우스 이펙트
+    // 마우스 이펙트1
+    // const mouseCursor = document.querySelector(".mouse__cursor");
+
+    // window.addEventListener("mousemove", (e) => {
+    //     gsap.to(mouseCursor, { duration: 0.3, left: e.pageX - 5, top: e.pageY - 5 });
+    // });
+
+    // document.querySelectorAll(".parallax__item__img").forEach(span => {
+    //     span.addEventListener("mouseenter", () => {
+    //         mouseCursor.classList.add("active");
+    //     });
+    //     span.addEventListener("mouseleave", () => {
+    //         mouseCursor.classList.remove("active");
+    //     });
+    // });
+    //-----------------------------------------------------------------------
     const mouseCursor = document.querySelector(".mouse__cursor");
 
+    // 마우스 움직임에 따라 커서 이동
     window.addEventListener("mousemove", (e) => {
-        gsap.to(mouseCursor, { duration: 0.3, left: e.pageX - 5, top: e.pageY - 5 });
+        mouseCursor.style.left = e.pageX - 5 + "px";
+        mouseCursor.style.top = e.pageY - 5 + "px";
     });
 
     document.querySelectorAll(".parallax__item__img").forEach(span => {
         span.addEventListener("mouseenter", () => {
             mouseCursor.classList.add("active");
+            mouseCursor.textContent = "click me!";
         });
+
         span.addEventListener("mouseleave", () => {
             mouseCursor.classList.remove("active");
+            mouseCursor.textContent = "";
         });
     });
+
+    document.querySelectorAll(".pointer").forEach(span => {
+        span.addEventListener("mouseenter", () => {
+            mouseCursor.classList.add("pointer");
+        });
+
+        span.addEventListener("mouseleave", () => {
+            mouseCursor.classList.remove("pointer");
+        });
+    });
+
 
 
 </script>

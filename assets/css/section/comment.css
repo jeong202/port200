@@ -79,7 +79,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--sub-color);
+  background-color: #c0b49c;
   color: var(--main-color)
 }
 
@@ -162,7 +162,7 @@ button:hover {
 
 .comment__pages>ul>li.active>a,
 .comment__pages>ul>li:hover>a {
-  background-color: var(--sub-color);
+  background-color: #c0b49c;
   color: var(--main-color);
 }
 

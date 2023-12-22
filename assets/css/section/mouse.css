@@ -2,7 +2,9 @@
     cursor: none;
 }
 
-.mouse__cursor {
+
+/* 기존
+ .mouse__cursor {
     position: absolute;
     left: 0;
     top: 0;
@@ -26,4 +28,55 @@
     border-bottom: 0;
     border-radius: 50%;
     z-index: 10001;
+} */
+.mouse__cursor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid rgba(233, 223, 206, 0.6);
+    border-radius: 0;
+    transform: rotate(-45deg);
+    user-select: none;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center text horizontally and vertically */
+    font-size: 1.5px;
+    font-family: "Partizeno";
+}
+
+/* 이미지 */
+.mouse__cursor.active {
+    transform: scale(20);
+    background-color: rgba(28, 30, 33, 0.5);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 50%;
+    z-index: 10001;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* 포인터 */
+.mouse__cursor.pointer {
+    cursor: none;
+    background-color: rgba(233, 223, 206, 0.6);
+    width: 15px;
+    height: 15px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 50%;
+    z-index: 10001;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.pointer {
+    cursor: none;
 }
