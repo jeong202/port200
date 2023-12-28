@@ -1,3 +1,4 @@
+<!-- 수정중 -->
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -337,6 +338,99 @@
             </div>
         </section>
         <!-- //info -->
+
+
+
+        <section id="comment">
+            <div class="comment__title">Comment</div>
+            <div class="comment__inner">
+                <div class="comment__view">
+                    <div class="text">
+                        <span>
+                            <span class="author">테스터</span>
+                            <span class="data">2023.12.14</span>
+                        </span>
+                        <p>반갑습니다</p>
+                        <div class="mode">
+                            <a href="#" class="modify">수정</a>
+                            <a href="#" class="delete">삭제</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <span>
+                            <span class="author">테스터</span>
+                            <span class="data">2023.12.14</span>
+                        </span>
+                        <p>반갑습니다</p>
+                        <div class="mode">
+                            <a href="#" class="modify">수정</a>
+                            <a href="#" class="delete">삭제</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <span>
+                            <span class="author">테스터</span>
+                            <span class="data">2023.12.14</span>
+                        </span>
+                        <p>반갑습니다</p>
+                        <div class="mode">
+                            <a href="#" class="modify">수정</a>
+                            <a href="#" class="delete">삭제</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <span>
+                            <span class="author">테스터</span>
+                            <span class="data">2023.12.14</span>
+                        </span>
+                        <p>반갑습니다</p>
+                        <div class="mode">
+                            <a href="#" class="modify">수정</a>
+                            <a href="#" class="delete">삭제</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <span>
+                            <span class="author">테스터</span>
+                            <span class="data">2023.12.14</span>
+                        </span>
+                        <p>반갑습니다</p>
+                        <div class="mode">
+                            <a href="#" class="modify">수정</a>
+                            <a href="#" class="delete">삭제</a>
+                        </div>
+                    </div>
+                    <div class="commentWrap">
+                        <div class="comment__pages">
+                            <ul>
+                                <!-- <li class="first"><a href="#">처음으로</a></li>
+                                <li class="prev"><a href="#">이전</a></li> -->
+                                <li class="active"><a href="#" class="pointer">1</a></li>
+                                <li><a href=" #" class="mouse__wrap pointer">2</a></li>
+                                <li><a href="#" class="mouse__wrap pointer">3</a></li>
+                                <li><a href="#" class="mouse__wrap pointer">4</a></li>
+                                <li><a href="#" class="mouse__wrap pointer">5</a></li>
+                                <!-- <li class="next"><a href="#">다음</a></li>
+                                <li class="last"><a href="#">마지막으로</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="comment__input">
+                            <fieldset>
+                                <legend class="blind">댓글 작성</legend>
+                                <div class="login">
+                                    <input type="text" id="commentName" placeholder="이름" autocomplete="off">
+                                    <input type="password" id="commentPass" placeholder="비밀번호" autocomplete="off">
+                                </div>
+                                <textarea placeholder="댓글을 입력하세요"></textarea>
+                                <button type="button" class="mouse__wrap pointer">댓글 작성</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- //comment -->
 
         <section id="contact">
             <div class="contact__title">
@@ -1097,7 +1191,22 @@
 
     init();
 
-    // 마우스 이펙트
+    // 마우스 이펙트1
+    // const mouseCursor = document.querySelector(".mouse__cursor");
+
+    // window.addEventListener("mousemove", (e) => {
+    //     gsap.to(mouseCursor, { duration: 0.3, left: e.pageX - 5, top: e.pageY - 5 });
+    // });
+
+    // document.querySelectorAll(".parallax__item__img").forEach(span => {
+    //     span.addEventListener("mouseenter", () => {
+    //         mouseCursor.classList.add("active");
+    //     });
+    //     span.addEventListener("mouseleave", () => {
+    //         mouseCursor.classList.remove("active");
+    //     });
+    // });
+    //-----------------------------------------------------------------------
     const mouseCursor = document.querySelector(".mouse__cursor");
 
     // 마우스 움직임에 따라 커서 이동
@@ -1109,7 +1218,7 @@
     document.querySelectorAll(".parallax__item__img").forEach(span => {
         span.addEventListener("mouseenter", () => {
             mouseCursor.classList.add("active");
-            mouseCursor.textContent = "Click GitHub!";
+            mouseCursor.textContent = "click me!";
         });
 
         span.addEventListener("mouseleave", () => {
