@@ -1093,13 +1093,58 @@
 
     init();
 
-    // 마우스 이펙트
-    const mouseCursor = document.querySelector(".mouse__cursor");
+    // // 마우스 이펙트
+    // const mouseCursor = document.querySelector(".mouse__cursor");
 
-    // 마우스 움직임에 따라 커서 이동
+    // // 마우스 움직임에 따라 커서 이동
+    // window.addEventListener("mousemove", (e) => {
+    //     mouseCursor.style.left = e.pageX - 5 + "px";
+    //     mouseCursor.style.top = e.pageY - 5 + "px";
+    // });
+
+    // document.querySelectorAll(".parallax__item__img").forEach(span => {
+    //     span.addEventListener("mouseenter", () => {
+    //         mouseCursor.classList.add("active");
+    //         mouseCursor.textContent = "Click GitHub!";
+    //     });
+
+    //     span.addEventListener("mouseleave", () => {
+    //         mouseCursor.classList.remove("active");
+    //         mouseCursor.textContent = "";
+    //     });
+    // });
+
+    // document.querySelectorAll(".pointer").forEach(span => {
+    //     span.addEventListener("mouseenter", () => {
+    //         mouseCursor.classList.add("pointer");
+    //     });
+
+    //     span.addEventListener("mouseleave", () => {
+    //         mouseCursor.classList.remove("pointer");
+    //     });
+    // });
+
+    const mouseCursor = document.querySelector(".mouse__cursor");
+    let isScrolling = false;
+
     window.addEventListener("mousemove", (e) => {
-        mouseCursor.style.left = e.pageX - 5 + "px";
-        mouseCursor.style.top = e.pageY - 5 + "px";
+        if (!isScrolling) {
+            mouseCursor.style.left = e.pageX - 5 + "px";
+            mouseCursor.style.top = e.pageY - 5 + "px";
+        }
+    });
+
+    window.addEventListener("scroll", () => {
+        isScrolling = true;
+        setTimeout(() => {
+            isScrolling = false;
+        }, 50); // Adjust the delay based on your preference
+
+        // You can add additional logic here if needed
+
+        // Example: Reset cursor position on scroll
+        mouseCursor.style.left = "-100px";
+        mouseCursor.style.top = "-100px";
     });
 
     document.querySelectorAll(".parallax__item__img").forEach(span => {
@@ -1123,7 +1168,6 @@
             mouseCursor.classList.remove("pointer");
         });
     });
-
 
 
 </script>
