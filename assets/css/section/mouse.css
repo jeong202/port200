@@ -55,3 +55,77 @@
 .pointer {
     cursor: none;
 }
+
+/* 로딩 */
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f5dc;
+    /* 베이지색 배경 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: #2c3e50;
+    /* 글자 색상 */
+    font-size: 24px;
+    /* 글자 크기 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* 원하는 폰트로 변경 */
+}
+
+.loading span {
+    display: inline-block;
+    width: 20px;
+    /* 동그라미 크기를 키우세요 */
+    height: 20px;
+    /* 동그라미 크기를 키우세요 */
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 10px;
+    /* 동그라미 간의 간격을 조절하세요 */
+    /* span을 동그랗게 */
+    animation: loading 1s 0s linear infinite;
+    /* 이벤트명  반복시간  딜레이시간  이벤트처리부드럽게  이벤트무한반복*/
+}
+
+.loading span:nth-child(1) {
+    /*loading의 자식 중 첫번째 span*/
+    /*nth-child : 형제 사이에서의 순서*/
+    animation-delay: 0s;
+    background-color: red;
+}
+
+.loading span:nth-child(2) {
+    animation-delay: 0.2s;
+    background-color: orange;
+}
+
+.loading span:nth-child(3) {
+    animation-delay: 0.4s;
+    background-color: yellowgreen;
+}
+
+@keyframes loading {
+
+    /*loading이라는 keyframe 애니메이션*/
+    0%,
+    /* 0, 50, 100은 구간*/
+    100% {
+        opacity: 0;
+        /* 안보였다가 */
+        transform: scale(0.5);
+        /*transform의 scale로 요소를 확대 또는 축소할 수 있음*/
+    }
+
+    50% {
+        opacity: 1;
+        /* 보였다가 */
+        transform: scale(1.2);
+        /* 1.2배 */
+    }
+}
