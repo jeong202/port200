@@ -364,10 +364,11 @@
         <div></div>
         <p>L o a d i n g . . .</p>
     </div>
+
 </body>
 <!-- body -->
 
-<!--lenis -->
+<!--lenis -->+
 <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 <!-- gsap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -1177,8 +1178,7 @@
         });
     });
 
-
-    // 로딩
+    //  로딩
     window.addEventListener('load', function () {
         // 로딩 오버레이를 부드럽게 숨깁니다. (예: 1초 동안)
         var loadingOverlay = document.getElementById('loading-overlay');
@@ -1197,6 +1197,24 @@
         }, 2000); // 2000 밀리초 = 2초 (1초 숨기기 + 1초 대기)
     });
 
+    // 로딩
+    // window.addEventListener('load', function () {
+    //     // 로딩 오버레이를 부드럽게 숨깁니다. (예: 1초 동안)
+    //     var loadingOverlay = document.getElementById('loading-overlay');
+    //     loadingOverlay.style.transition = 'opacity 1s ease';
+
+    //     // 일정 시간 후에 투명도를 0으로 설정하여 숨김
+    //     setTimeout(function () {
+    //         loadingOverlay.style.opacity = '0';
+    //     }, 1000); // 1000 밀리초 = 1초
+
+    //     // 로딩이 완료된 후에 로딩 오버레이를 완전히 숨깁니다.
+    //     setTimeout(function () {
+    //         loadingOverlay.style.display = 'none';
+    //         // body의 오버플로우를 복원합니다.
+    //         document.body.style.overflow = 'visible';
+    //     }, 2000); // 2000 밀리초 = 2초 (1초 숨기기 + 1초 대기)
+    // });
 </script>
 
 </html>
