@@ -1,4 +1,3 @@
-<!-- 수정중 -->
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -26,13 +25,13 @@
     </div>
     <!-- //skip -->
 
-    <header id="header" role="banner">
+    <header id="header" class="mouse__wrap" role="banner">
         <div class="header__inner">
             <div class="header__logo">
-                <a href="#">portfolio</a>
+                <a href=" #" class="pointer">portfolio</a>
             </div>
-            <div class="header__nav" id="trigger-overlay" role="navigation" aria-label="메인 메뉴">
-                <span>menu</span>
+            <div class="header__nav pointer" id="trigger-overlay" role="navigation" aria-label="메인 메뉴">
+                <span class="pointer">menu</span>
             </div>
         </div>
         <div class="overlay overlay-slidedown">
@@ -43,7 +42,6 @@
                     <li><a href="#port">works</a></li>
                     <li><a href="#tech">tech</a></li>
                     <li><a href="#info">about</a></li>
-                    <li><a href="#comment">comment</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
@@ -51,7 +49,7 @@
     </header>
     <!-- //header -->
 
-    <main id="main" role="main">
+    <main id="main" role="main" class="mouse__wrap">
         <section id="intro">
             <div class="intro__title">
                 <div class="title1 split t1">creative</div>
@@ -94,12 +92,14 @@
                 <li>1. GuitarYouTube</li>
                 <li>2. Quiz</li>
                 <li>3. myuduck</li>
-                <li>4. Blog</li>
+                <li>4. Web Standard Site</li>
             </ul>
         </div>
         <!-- flow(port) -->
 
         <section id="port" class="parallax__cont">
+            <div class=" mouse__cursor">
+            </div>
             <section id="section1" class="parallax__item" data-gradient="linear-gradient(to right, #1c1e21, #36485e)">
                 <figure class="parallax__item__imgWrap reveal reveal_RTL">
                     <div class="parallax__item__img"></div>
@@ -111,8 +111,8 @@
                         리액트와 유튜브 API를 이용하여 기타리스트의 기타연주와 관련된 사이트를 만들었습니다.
                     </div>
                     <div class="links reveal reveal_RTL" data-delay="0.6">
-                        <div class="git__link"><a href="#" class="btn">GitHub</a></div>
-                        <div class="view__link"><a href="#" class="btn">View</a></div>
+                        <div class="git__link"><a href="https://github.com/jeong202/youtube-project2" target="_blank" class="btn pointer">GitHub</a></div>
+                        <div class="view__link"><a href="https://youtubeproject2023.netlify.app/" target="_blank" class="btn pointer">View</a></div>
                     </div>
                 </div>
 
@@ -132,9 +132,10 @@
                         이벤트 리스너와 조건문을 활용하여 사용자 상호작용과 결과 표시 기능을 갖추고 있습니다.
                     </p>
                     <div class="links reveal reveal_LTR" data-delay="0.6">
-                        <div class="git__link"><a href="#" class="btn">GitHub</a></div>
-                        <div class="view__link"><a href="#" class="btn">View</a></div>
+                        <div class=" git__link"><a href="https://github.com/jeong202/js" target="_blank" class="btn pointer">GitHub</a></div>
+                        <div class="view__link"><a href="https://jeong202.github.io/js/javascript/quiz/quizEffect01.html" target="_blank" class="btn pointer">View</a></div>
                     </div>
+                </div>
                 </div>
 
             </section>
@@ -153,8 +154,8 @@
                         카카오지도 API를 연동하였고 뮤지컬과 배우 찜기능을 구현했습니다.
                     </p>
                     <div class="links reveal reveal_RTL" data-delay="0.6">
-                        <div class=" git__link"><a href="#" class="btn">GitHub</a></div>
-                        <div class="view__link"><a href="#" class="btn">View</a></div>
+                        <div class=" git__link"><a href="https://github.com/jeong202/myuduck" target="_blank" class="btn pointer">GitHub</a></div>
+                        <div class="view__link"><a href="http://jhyjhy968.dothome.co.kr/myuduck/main/main.php" target="_blank" class="btn pointer">View</a></div>
                     </div>
                 </div>
 
@@ -165,17 +166,15 @@
                 <figure class=" parallax__item__imgWrap reveal reveal_LTR">
                     <div class="parallax__item__img"></div>
                 </figure>
-                <p class="parallax__item__desc reveal reveal_LTR" data-delay="0.4">Blog</p>
+                <p class="parallax__item__desc reveal reveal_LTR" data-delay="0.4">Web Standard Site</p>
                 <div class="descwrap">
                     <p class="parallax__item__desc2 reveal reveal_LTR" data-delay="0.6">
-                        PHP를 이용하여 만든 개발 블로그입니다. DB는 MySQL을 사용하였습니다.<br>
-                        CRUD (Create, Read, Update, Delete) 기능 즉, 글 작성 및 수정과 삭제가 가능하며, 댓글 추가
-                        및 수정과 삭제가 가능합니다.<br>
-                        댓글을 비동기적으로 추가, 수정, 삭제하기 위해 Ajax를 사용했습니다.
+                        웹표준을 준수하여 다양한 사이트를 제작했습니다. HTML,CSS,Javascript를 사용하였습니다.<br>
+                        레이아웃 구조와 페이지 구조 그리고 반응형 웹에 대해 학습했습니다.
                     </p>
                     <div class="links reveal reveal_LTR" data-delay="0.6">
-                        <div class=" git__link"><a href="#" class="btn">GitHub</a></div>
-                        <div class="view__link"><a href="#" class="btn">View</a></div>
+                        <div class=" git__link"><a href="https://jeong202.github.io/web-standard/" target="_blank" class="btn pointer">GitHub</a></div>
+                        <div class="view__link"><a href="https://github.com/jeong202/web-standard" target="_blank" class="btn pointer">View</a></div>
                     </div>
                 </div>
             </section>
@@ -276,7 +275,7 @@
                 <div class="info__wrap">
                     <article class="info__item i1">
                         <span class="num">about 01 .</span>
-                        <img src="assets/img/info01.jpg" alt="info1" />
+                        <!-- <img src="assets/img/info01.jpg" alt="info1" /> -->
                         <h3 class="title">첫걸음</h3>
                         <p class="desc">
                             물류 유통 쪽에서 일하면서 처음으로 프로그램이라는 게 무엇인지 관심을 가지게 되었습니다.
@@ -287,7 +286,7 @@
                     </article>
                     <article class="info__item i2">
                         <span class="num">about 02 .</span>
-                        <img src="assets/img/info02.jpg" alt="info2" />
+                        <!-- <img src="assets/img/info06.jpg" alt="info2" /> -->
                         <h3 class="title">열정과 도전</h3>
                         <p class="desc">
                             이런 놀라운 일을 가능하게 하는 프로그램이 어떻게 만들어지게 되었을까 관심이 생기기 시작했고
@@ -297,35 +296,31 @@
                     </article>
                     <article class="info__item i3">
                         <span class="num">about 03 .</span>
-                        <img src="assets/img/info03.jpg" alt="skill3" />
+                        <!-- <img src="assets/img/info10.jpg" alt="skill3" /> -->
                         <h3 class="title">성공으로 이끄는 힘</h3>
                         <p class="desc">
-                            개발자로서의 길에 발을 디뎠을 때,
-                            누군가가 새로운 기술과 끊임없는 학습의 여정이 저를 압박할거라고 그리고 문제에 직면했을 때 해결책을 찾는 과정이 스트레스로 다가올거라고 염려했습니다. 그러나 끊임없는
-                            새로운 기술은 저를
-                            매료시켰고 끈기 있게 해결책을 찾는 과정은 제게 큰 즐거움 이었습니다. 새로운 도전에도 두려움 없이 나아가고 매 프로젝트에서 새로운 지식과 기술을 습득하며, 그
-                            과정에서 저만의 개발자로서의
-                            자부심을 키워나가고 있습니다.
+                            개발자로서의 길에 발을 디뎠을 때, 누군가가 새로운 기술과 끊임없는 학습의 여정이
+                            저를 압박할거라고 그리고 문제에 직면했을 때 해결책을 찾는 과정이 스트레스로 다가올거라고
+                            염려했습니다.
                         </p>
                     </article>
                     <article class="info__item i4">
                         <span class="num">about 04 .</span>
-                        <img src="assets/img/info05.jpg" alt="info5" />
+                        <!-- <img src="assets/img/info08.jpg" alt="info5" /> -->
                         <h3 class="title">조용히, 하지만 강단 있게!</h3>
                         <p class="desc">
-                            저는 내향적인 성격입니다. 내향적인 성격이라 말이 적어, 신중히 생각해 고르고 고른 말로 타인과 소통하기 때문에 타인과 말로 인한 마찰이 적고 말이 적기 때문에 제
-                            이야기를 하기보다는 타인의 말을 더 들어주는 편이라 타인의 공감을 쉽게 끌어냅니다.
-                            이렇게 마찰이 없고 편안한 상태에서 상대방도 저도 더 적극적으로 마음의 문을 열고 쉽게 의견을 나눌 수 있다고 생각합니다.
-                            저는 많은 의사소통보다는 질 좋은 의사소통이 서로를 이해하고 문제를 해결하는 데 더 도움이 된다고 생각합니다.
+                            그러나 끊임없는 새로운 기술은 저를 매료시켰고
+                            끈기 있게 해결책을 찾는 과정은 제게 큰 즐거움 이었습니다.
+                            새로운 도전에도 두려움 없이 나아가고 매 프로젝트에서 새로운 지식과 기술을 습득하며,
+                            그 과정에서 저만의 개발자로서의 자부심을 키워나가고 있습니다.
                         </p>
                     </article>
                     <article class="info__item i5">
                         <span class="num">about 05 .</span>
-                        <img src="assets/img/info05.jpg" alt="info5" />
+                        <!-- <img src="assets/img/info09.jpg" alt="info5" /> -->
                         <h3 class="title">행복의 원천</h3>
                         <p class="desc">
-                            내향적이라 밖으로 에너지를 방출하기보다는 안으로 에너지를 방출하기 때문에
-                            몸을 움직이기보다는 조용히 머리로 제 미래에 대한 생각을 많이 하는 편입니다
+                            내향적이라 몸을 움직이기보다는 조용히 머리로 제 미래에 대한 생각을 많이 하는 편입니다
                             이런 시간을 보내면서 제 미래를 위해 무언가를 열정적으로 할 힘을 얻고 행동으로 옮기는 편입니다.
                             저는 이 과정에서 많은 행복을 얻는데, 새로운 기술과 도구가 끊임없이 나오는 개발이라는 직무는
                             제가 끊임없이 생각할 수 있는 시간을 주고 저에게 끊임없는 자기 개발과 행복의 원천이 됩니다
@@ -335,99 +330,6 @@
             </div>
         </section>
         <!-- //info -->
-
-
-
-        <section id="comment">
-            <div class="comment__title">Comment</div>
-            <div class="comment__inner">
-                <div class="comment__view">
-                    <div class="text">
-                        <span>
-                            <span class="author">테스터</span>
-                            <span class="data">2023.12.14</span>
-                        </span>
-                        <p>반갑습니다</p>
-                        <div class="mode">
-                            <a href="#" class="modify">수정</a>
-                            <a href="#" class="delete">삭제</a>
-                        </div>
-                    </div>
-                    <div class="text">
-                        <span>
-                            <span class="author">테스터</span>
-                            <span class="data">2023.12.14</span>
-                        </span>
-                        <p>반갑습니다</p>
-                        <div class="mode">
-                            <a href="#" class="modify">수정</a>
-                            <a href="#" class="delete">삭제</a>
-                        </div>
-                    </div>
-                    <div class="text">
-                        <span>
-                            <span class="author">테스터</span>
-                            <span class="data">2023.12.14</span>
-                        </span>
-                        <p>반갑습니다</p>
-                        <div class="mode">
-                            <a href="#" class="modify">수정</a>
-                            <a href="#" class="delete">삭제</a>
-                        </div>
-                    </div>
-                    <div class="text">
-                        <span>
-                            <span class="author">테스터</span>
-                            <span class="data">2023.12.14</span>
-                        </span>
-                        <p>반갑습니다</p>
-                        <div class="mode">
-                            <a href="#" class="modify">수정</a>
-                            <a href="#" class="delete">삭제</a>
-                        </div>
-                    </div>
-                    <div class="text">
-                        <span>
-                            <span class="author">테스터</span>
-                            <span class="data">2023.12.14</span>
-                        </span>
-                        <p>반갑습니다</p>
-                        <div class="mode">
-                            <a href="#" class="modify">수정</a>
-                            <a href="#" class="delete">삭제</a>
-                        </div>
-                    </div>
-                    <div class="commentWrap">
-                        <div class="comment__pages">
-                            <ul>
-                                <!-- <li class="first"><a href="#">처음으로</a></li>
-                                <li class="prev"><a href="#">이전</a></li> -->
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <!-- <li class="next"><a href="#">다음</a></li>
-                                <li class="last"><a href="#">마지막으로</a></li> -->
-                            </ul>
-                        </div>
-                        <div class="comment__input">
-                            <fieldset>
-                                <legend class="blind">댓글 작성</legend>
-                                <div class="login">
-                                    <input type="text" id="commentName" placeholder="이름" autocomplete="off">
-                                    <input type="password" id="commentPass" placeholder="비밀번호" autocomplete="off">
-                                </div>
-                                <textarea placeholder="댓글을 입력하세요"></textarea>
-                                <button type="button">댓글 작성</button>
-                            </fieldset>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- //comment -->
 
         <section id="contact">
             <div class="contact__title">
@@ -440,27 +342,37 @@
     </main>
     <!-- //main -->
 
-    <footer id="footer" role="contentinfo">
+    <footer id="footer" role="contentinfo" class="mouse__wrap">
         <div class="footer__inner">
             <div>
-                <span><a href="https://github.com/jeong202" target="_blank">GitHub</a></span>
+                <span><a class="pointer" href="https://github.com/jeong202" target="_blank">GitHub</a></span>
             </div>
             <div>
-                <span><a href="#comment">COMMENT</a></span>
+                <span><a class="pointer" href="#tech">TECH</a></span>
             </div>
         </div>
     </footer>
     <!-- //footer -->
+
+    <div id="loading-overlay" class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div></div>
+        <p>L o a d i n g . . .</p>
+    </div>
+
 </body>
 <!-- body -->
 
-<!--lenis -->
+<!--lenis -->+
 <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 <!-- gsap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/split-type"></script>
-<!-- <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script> -->
+
+<script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
 <!-- three.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js"></script>
 <!-- fullscreen menu -->
@@ -743,7 +655,7 @@
             trigger: item,
             start: "top 50%",
             end: "bottom 20%",
-            markers: true,
+            // markers: true,
 
             onEnter: () => gsap.to("body", {
                 background: gradient,
@@ -771,7 +683,7 @@
             }
         });
     });
-
+    //tech
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.utils.toArray('.tech__stack.t6').forEach(stack => {
@@ -788,6 +700,38 @@
             },
         });
     });
+
+
+
+
+
+
+    gsap.utils.toArray('.tech__stack.t6').forEach(stack => {
+        const stackName = stack.querySelector('.stack__name');
+        const stackDesc = stack.querySelector('.stack__desc');
+
+        gsap.set([stackName, stackDesc], { opacity: 0, y: '+=20' });
+
+        ScrollTrigger.create({
+            trigger: stack,
+            start: 'top 60%',
+            onEnter: () => {
+                gsap.to([stackName, stackDesc], { opacity: 1, y: 0, duration: 0.5, stagger: 0.2 });
+            },
+            onEnterBack: () => {
+                gsap.to([stackName, stackDesc], { opacity: 0, y: '+=20', duration: 0.5, stagger: 0.2 });
+            },
+        });
+    });
+
+
+
+
+
+
+
+
+
     // port : 글씨 흐리게
     gsap.utils.toArray('.parallax__item').forEach(item => {
         const imgWrap = item.querySelector('.parallax__item__imgWrap');
@@ -821,13 +765,6 @@
             anticipatePin: 1,
         },
     });
-    // comment : 이미지
-    $(".hover").mouseleave(
-        function () {
-            $(this).removeClass("hover");
-        }
-    );
-
     // 마지막
     let canvas, ctx;
     let render2, init;
@@ -1162,7 +1099,119 @@
 
     init();
 
+    // // 마우스 이펙트
+    // const mouseCursor = document.querySelector(".mouse__cursor");
 
+    // // 마우스 움직임에 따라 커서 이동
+    // window.addEventListener("mousemove", (e) => {
+    //     mouseCursor.style.left = e.pageX - 5 + "px";
+    //     mouseCursor.style.top = e.pageY - 5 + "px";
+    // });
+
+    // document.querySelectorAll(".parallax__item__img").forEach(span => {
+    //     span.addEventListener("mouseenter", () => {
+    //         mouseCursor.classList.add("active");
+    //         mouseCursor.textContent = "Click GitHub!";
+    //     });
+
+    //     span.addEventListener("mouseleave", () => {
+    //         mouseCursor.classList.remove("active");
+    //         mouseCursor.textContent = "";
+    //     });
+    // });
+
+    // document.querySelectorAll(".pointer").forEach(span => {
+    //     span.addEventListener("mouseenter", () => {
+    //         mouseCursor.classList.add("pointer");
+    //     });
+
+    //     span.addEventListener("mouseleave", () => {
+    //         mouseCursor.classList.remove("pointer");
+    //     });
+    // });
+
+    const mouseCursor = document.querySelector(".mouse__cursor");
+    let isScrolling = false;
+
+    window.addEventListener("mousemove", (e) => {
+        if (!isScrolling) {
+            mouseCursor.style.left = e.pageX - 5 + "px";
+            mouseCursor.style.top = e.pageY - 5 + "px";
+        }
+    });
+
+    window.addEventListener("scroll", () => {
+        isScrolling = true;
+        setTimeout(() => {
+            isScrolling = false;
+        }, 50); // Adjust the delay based on your preference
+
+        // You can add additional logic here if needed
+
+        // Example: Reset cursor position on scroll
+        mouseCursor.style.left = "-100px";
+        mouseCursor.style.top = "-100px";
+    });
+
+    document.querySelectorAll(".parallax__item__img").forEach(span => {
+        span.addEventListener("mouseenter", () => {
+            mouseCursor.classList.add("active");
+            mouseCursor.textContent = "Click GitHub!";
+        });
+
+        span.addEventListener("mouseleave", () => {
+            mouseCursor.classList.remove("active");
+            mouseCursor.textContent = "";
+        });
+    });
+
+    document.querySelectorAll(".pointer").forEach(span => {
+        span.addEventListener("mouseenter", () => {
+            mouseCursor.classList.add("pointer");
+        });
+
+        span.addEventListener("mouseleave", () => {
+            mouseCursor.classList.remove("pointer");
+        });
+    });
+
+    //  로딩
+    window.addEventListener('load', function () {
+        // 로딩 오버레이를 부드럽게 숨깁니다. (예: 1초 동안)
+        var loadingOverlay = document.getElementById('loading-overlay');
+        loadingOverlay.style.transition = 'opacity 1s ease';
+
+        // 일정 시간 후에 투명도를 0으로 설정하여 숨김
+        setTimeout(function () {
+            loadingOverlay.style.opacity = '0';
+        }, 1000); // 1000 밀리초 = 1초
+
+        // 로딩이 완료된 후에 로딩 오버레이를 완전히 숨깁니다.
+        setTimeout(function () {
+            loadingOverlay.style.display = 'none';
+            // body의 오버플로우를 복원합니다.
+            document.body.style.overflow = 'visible';
+        }, 2000); // 2000 밀리초 = 2초 (1초 숨기기 + 1초 대기)
+    });
+
+    // 로딩
+    // window.addEventListener('load', function () {
+    //     // 로딩 오버레이를 부드럽게 숨깁니다. (예: 1초 동안)
+    //     var loadingOverlay = document.getElementById('loading-overlay');
+    //     loadingOverlay.style.transition = 'opacity 1s ease';
+
+    //     // 일정 시간 후에 투명도를 0으로 설정하여 숨김
+    //     setTimeout(function () {
+    //         loadingOverlay.style.opacity = '0';
+    //     }, 1000); // 1000 밀리초 = 1초
+
+    //     // 로딩이 완료된 후에 로딩 오버레이를 완전히 숨깁니다.
+    //     setTimeout(function () {
+    //         loadingOverlay.style.display = 'none';
+    //         // body의 오버플로우를 복원합니다.
+    //         document.body.style.overflow = 'visible';
+    //     }, 2000); // 2000 밀리초 = 2초 (1초 숨기기 + 1초 대기)
+    // });
 </script>
 
 </html>
